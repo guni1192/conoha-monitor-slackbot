@@ -1,0 +1,18 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[scripts]
+lint = 'pycodestyle .'
+
+[packages]
+requests = "*"
+slackbot = "*"
+
+[dev-packages]
+ipython = "*"
+"autopep8" = "*"
+
+[requires]
+python_version = "3.6"
