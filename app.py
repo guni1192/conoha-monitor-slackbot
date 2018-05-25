@@ -2,6 +2,8 @@ import os
 from slackbot.bot import Bot, respond_to
 from conoha import ConoHaHandler
 
+conoha = conoha_init()
+
 
 @respond_to('servers')
 def mention_func(message):
@@ -20,13 +22,11 @@ def conoha_init():
     tenant_id = os.environ['CONOHA_TENANT_ID']
     return ConoHaHandler(username, password, tenant_id)
 
-conoha = conoha_init()
-
 
 def main():
-
     bot = Bot()
     bot.run()
+
 
 if __name__ == "__main__":
     print('RUNNING SLACK BOT')

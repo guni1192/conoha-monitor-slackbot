@@ -4,15 +4,16 @@ verify_ssl = true
 name = "pypi"
 
 [scripts]
-lint = 'pycodestyle .'
+fix = 'autopep8 -i *.py'
 
 [packages]
 requests = "*"
 slackbot = "*"
+"autopep8" = "*"
 
 [dev-packages]
 ipython = "*"
-"autopep8" = "*"
+autopep8 = "*"
 
 [requires]
 python_version = "3.6"
