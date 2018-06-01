@@ -9,7 +9,6 @@ fix = 'autopep8 -i *.py'
 [packages]
 requests = "*"
 slackbot = "*"
-"autopep8" = "*"
 
 [dev-packages]
 ipython = "*"
